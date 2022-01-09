@@ -10,6 +10,9 @@ app = Flask(__name__)
 def index_get():
     return render_template("index.html")
 
+@app.route('/newpage.html')
+def newpage():
+   return render_template('newpage.html')
 
 
 @app.post("/predict")
